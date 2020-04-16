@@ -12,9 +12,9 @@ app.use('/', express.static(__dirname + '/public'))
 
 app.use('/tasks', taskRoute)
 
-db.sync({force:true})
+db.sync()
   .then(() => {
-    app.listen(6543)
+    app.listen(process.env.PORT || 6543)
   })
   .catch((err) => {
     console.error(err)
