@@ -1,3 +1,4 @@
+
 function sortTable(n) { 
     var table; 
     table = document.getElementById("mytable"); 
@@ -55,8 +56,8 @@ function sortTableByPriority(){
 
         for (i = 1; i < (rows.length - 1); i++) { 
             var Switch = false; 
-            x1 = rows[i].getElementsByTagName("TD")[5]; 
-            y1 = rows[i + 1].getElementsByTagName("TD")[5]; 
+            x1 = rows[i].getElementsByTagName("TD")[4]; 
+            y1 = rows[i + 1].getElementsByTagName("TD")[4]; 
             
             if(x1.innerText == 'High'){
                 x = 1

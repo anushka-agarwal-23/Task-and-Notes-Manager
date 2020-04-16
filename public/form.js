@@ -21,8 +21,8 @@ function openForm() {
     document.getElementById("updateForm").style.display = "none";
   }
   function openTaskCard() {
-    document.getElementById("taskCard").style.display = "block";
+    document.getElementById("notes").style.display = "block";
   }
   function closeTaskCard() {
-    document.getElementById("taskCard").style.display = "none";
+    document.getElementById("notes").style.display = "none";
   }

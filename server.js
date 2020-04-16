@@ -12,7 +12,7 @@ app.use('/', express.static(__dirname + '/public'))
 
 app.use('/tasks', taskRoute)
 
-db.sync()
+db.sync({force:true})
   .then(() => {
     app.listen(6543)
   })
